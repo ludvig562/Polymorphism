@@ -5,6 +5,16 @@ namespace Polymorphism;
 public class Manager : Person
 {
     public string Department { get; set; }
+    public int TeamSize { get; set; }
+    public decimal BonusPercentage { get; set; }
+
+    public enum ManagementLevel
+    {
+        Junior,
+        Middle,
+        Senior
+    }
+    public ManagementLevel Management { get; set; }
 
     public void HoldMeeting()
     {
