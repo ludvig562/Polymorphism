@@ -27,6 +27,7 @@
                 Department = "Front Desk"
             };
 
+
             // Anropa metoder för att testa
             Console.WriteLine("Manager:");
             manager.PrintInfo();
@@ -37,6 +38,27 @@
             employee.PrintInfo();
             employee.Introduce();
             employee.Work();
+
+
+            Consultant consultant = new Consultant
+            {
+                Name = "Eva Expert",
+                Age = 35,
+                EmployeeId = "C001",
+                StartDate = new DateTime(2023, 1, 1),
+                Salary = 0, // Konsulter har ofta inte fast lön
+                HourlyRate = 1000,
+                ConsultingFirm = "Hotell Experterna AB"
+            };
+
+            Console.WriteLine("\nConsultant:");
+            consultant.PrintInfo();
+            consultant.Introduce();
+            consultant.GiveAdvice();
+            Console.WriteLine($"Hourly Rate: {consultant.HourlyRate}");
+            Console.WriteLine($"Consulting Firm: {consultant.ConsultingFirm}");
+
+            //Test 
         }
     }
 }
