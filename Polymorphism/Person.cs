@@ -19,5 +19,9 @@ public class Person
     {
         Console.WriteLine($"Hej jag heter {Name} och är {Age} år gammal.");
     }
+    public virtual void DoWork()
+    {
+        Console.WriteLine("ARBETSLÖS");
+    }
 }
 
