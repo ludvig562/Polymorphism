@@ -10,7 +10,7 @@ public class HouseKeeper : Employee
         Average,
         Thorough
     }
-    public Dictionary<string, int>{ get; set; }
+    public Dictionary<string, int> SuppliesInventory { get; set; }
     public List<string> SpecialtyAreas;
     public override void DoWork()
     {
