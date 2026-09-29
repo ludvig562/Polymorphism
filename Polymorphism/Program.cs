@@ -33,6 +33,7 @@
             manager.PrintInfo();
             manager.Introduce();
             manager.HoldMeeting();
+            manager.PlanBudget();
 
             Console.WriteLine("\nEmployee:");
             employee.PrintInfo();
@@ -48,7 +49,8 @@
                 StartDate = new DateTime(2023, 1, 1),
                 Salary = 0, // Konsulter har ofta inte fast lön
                 HourlyRate = 1000,
-                ConsultingFirm = "Hotell Experterna AB"
+                ConsultingFirm = "Hotell Experterna AB",
+                Expertise = "städning och underhåll"
             };
 
             Console.WriteLine("\nConsultant:");
@@ -57,6 +59,14 @@
             consultant.GiveAdvice();
             Console.WriteLine($"Hourly Rate: {consultant.HourlyRate}");
             Console.WriteLine($"Consulting Firm: {consultant.ConsultingFirm}");
+
+
+            HouseKeeper houseKeeper = new HouseKeeper();
+            houseKeeper.Name = "Anna Clean";
+            houseKeeper.Age = 31;
+            Console.WriteLine();
+            houseKeeper.PrintInfo();
+            houseKeeper.Work();
 
             //Test 
         }
