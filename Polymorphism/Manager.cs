@@ -15,4 +15,9 @@ public class Manager : Person
     {
         Console.WriteLine("Uf! Vad jobbigt.. nu måste jag planera hotellets budget.");
     }
+
+    public override void DoWork()
+    {
+        Console.WriteLine("Chefen planerar och leder arbetet på avdelningen för lyxsviter.");
+    }
 }

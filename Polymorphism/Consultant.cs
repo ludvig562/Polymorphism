@@ -13,4 +13,8 @@ public class Consultant : Person
     {
         Console.WriteLine($"Konsulten ger sin {Expertise} expertis till hotellet.");
     }
+    public override void DoWork()
+    {
+        Console.WriteLine("Konsulten ger strategiska råd om hotellsäkerhet.");
+    }
 }

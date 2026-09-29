@@ -4,8 +4,8 @@ namespace Polymorphism;
 
 public class HouseKeeper : Employee
 {
-    public override void Work()
+    public override void DoWork()
     {
-        Console.WriteLine($"{Name} städar rummet.");
+        Console.WriteLine("Hotellstädaren städar hotellrummen.");
     }
 }
