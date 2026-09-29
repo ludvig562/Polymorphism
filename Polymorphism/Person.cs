@@ -9,6 +9,9 @@ public class Person
     public string EmployeeId { get; set; }
     public DateTime StartDate { get; set; }
     public decimal Salary { get; set; }
+    public string PhoneNumber { get; set; }
+    public string Email { get; set; }
+    public string Address { get; set; }
 
     public virtual void PrintInfo()
     {
